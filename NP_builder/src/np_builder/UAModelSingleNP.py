@@ -14,32 +14,27 @@ import matplotlib.pyplot as plt
 ###  "gold_np_thiol.cfg", which can be visualized by Ju Li's Atomeye program.
 ###  Atomeye is a free, fast visualization software. It can be downloaded from
 ###  http://li.mit.edu/Archive/Graphics/A/
-    
+
+# Constants used for this code 
+
 a = 4.0782 # gold lattice constant
 BoxSize = 100 # supercell edge length
 H = np.concatenate([[BoxSize,0,0],[0,BoxSize,0],[0,0,BoxSize]]) # supercell matrix
 natom_thiol = 9 # so total number of atoms per thiol will be 9
 R=input_('radius of the sphere to put thiols (say = 30):')
-#
+nphi = 8
+ntheta = 17
 
-# UAModelSingleNP.m:19
-    ###  number of atoms per thiol in united atom model.
-    ###  for octanethiol SC8H17, it will be coarse-grained as SC8
-    natom_thiol=9
-# UAModelSingleNP.m:24
-    ###  put the thiol molecules initially on a sphere centered
+#
 ###  on the gold nanocrystal. The sphere has radius R
   UAModelSingleNP.m:28
-    ###  the azimuthal angle and polar angle are divided evenly
+###  the azimuthal angle and polar angle are divided evenly
 ###  forming a grid, the thiol molecules are then put on these grids
 ###  total number of thiol molecules will be the product
 ###  of nphi and ntheta
-    nphi=8
-# UAModelSingleNP.m:34
-    ntheta=17
 # UAModelSingleNP.m:35
-    #### total number of thiols
-    n_thiol=dot(nphi,ntheta)
+#### total number of thiols
+n_thiol=np.dot(nphi,ntheta)
 # UAModelSingleNP.m:38
     ##########################################
 ### BUILDING ICOSAHEDRAL GOLD NANOCRYSTAL
@@ -356,23 +351,14 @@ R=input_('radius of the sphere to put thiols (say = 30):')
     ##########################################################################
     
     atom_name_Au='Au'
-# UAModelSingleNP.m:246
     atom_mass_Au=196.96655
-# UAModelSingleNP.m:247
     atom_name_S='S'
-# UAModelSingleNP.m:249
     atom_mass_S=32.065
-# UAModelSingleNP.m:250
     atom_name_C='C'
-# UAModelSingleNP.m:252
     atom_mass_C=12.001
-# UAModelSingleNP.m:253
     natom_total=n_gold + dot(natom_thiol,n_thiol)
-# UAModelSingleNP.m:255
     cfg_name='gold_np_thiol.cfg'
-# UAModelSingleNP.m:257
     cfg=fopen(cfg_name,'w')
-# UAModelSingleNP.m:258
     fprintf(cfg,'Number of particles = %d\n',natom_total)
     fprintf(cfg,'H0(1,1)= %.30g A\n',H(1,1))
     fprintf(cfg,'H0(1,2)= %.30g A\n',H(1,2))
