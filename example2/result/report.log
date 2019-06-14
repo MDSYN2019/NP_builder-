@@ -1,0 +1,16 @@
+Imported options:
+	CAP1                                  []
+	LIG1_C                                15
+	LIG1_S                                 0
+	LIG2_S                                 0
+	LIG1_FRAC                            1.0
+	CAP2                                  []
+	LIG1_FILE                 temporary file
+	LIG2_C                                 0
+	ELONGATED                          False
+	MORPHOLOGY                        random
+	CORE                      temporary file
+	RSEED                                666
+	STRIPES                                1
+	FRCMOD                              None
+	LIG2_FILE                           None
