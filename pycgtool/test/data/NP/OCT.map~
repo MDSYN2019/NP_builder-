@@ -1,9 +1,0 @@
-; comments begin with a semicolon
-[OCT]
-C1 C3 C1 C2 C3 
-C2 C3 C4 C5 C6
-C3 C2 C7 C8
-S4 C5 S9 C10 
-
-[SOL]
-W P4 OW HW1 HW2

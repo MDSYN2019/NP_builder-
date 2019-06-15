@@ -1,0 +1,6 @@
+; comments begin with a semicolon
+[OCT]
+C1 C2
+C2 C3
+C3 S4
+

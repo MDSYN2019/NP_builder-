@@ -1,0 +1,24 @@
+; 
+; Topology prepared automatically using PyCGTOOL 
+; James Graham <J.A.Graham@soton.ac.uk> 2016 
+; University of Southampton 
+; https://github.com/jag1g13/pycgtool 
+;
+
+[ moleculetype ]
+OCT     1
+
+[ atoms ]
+   1 C3      1 OCT  C1      1    0.000
+   2 C3      1 OCT  C2      2    0.000
+   3 C2      1 OCT  C3      3    0.000
+   4 C5      1 OCT  S4      4    0.000
+
+[ angles ]
+   1    2    3    2    173.28136          inf
+   2    3    4    2    177.17298          inf
+
+[ constraints ]
+   1    2    1      0.38471
+   2    3    1      0.31834
+   3    4    1      0.27651

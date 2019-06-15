@@ -1,0 +1,25 @@
+; comments begin with a semicolon
+
+[AU]
+P5 P5 AU 
+
+[AUS]
+P5 P5 AUS 
+
+[AUL]
+P5 P5 AUL
+
+[OCT]
+C1 C3 C9 C2 C3 C4 
+C2 C3 C5 C6 C7
+S3 C5 C8 ST C9  
+
+[MUS]
+C1 C3 C2 C3 C4
+C2 C3 C5 C6 C7
+C3 C3 C8 C9 C10
+C4 C2 C11 C12 
+S5 C5 S1 O1 O2 O3 ST
+
+[SOL]
+W P4 OW HW1 HW2
