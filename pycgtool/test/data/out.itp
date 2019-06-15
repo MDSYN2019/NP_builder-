@@ -1,0 +1,41 @@
+; 
+; Topology prepared automatically using PyCGTOOL 
+; James Graham <J.A.Graham@soton.ac.uk> 2016 
+; University of Southampton 
+; https://github.com/jag1g13/pycgtool 
+;
+
+[ moleculetype ]
+ALLA    1
+
+[ atoms ]
+   1 P3      1 ALLA C1      1    0.000
+   2 P3      1 ALLA C2      2    0.000
+   3 P3      1 ALLA C3      3    0.000
+   4 P3      1 ALLA C4      4    0.000
+   5 P2      1 ALLA C5      5    0.000
+   6 P4      1 ALLA O5      6    0.000
+
+[ angles ]
+   1    2    3    2     76.94330          inf
+   2    3    4    2    116.08495          inf
+   3    4    5    2    109.09219          inf
+   4    5    6    2     84.56550          inf
+   5    6    1    2    149.37005          inf
+   6    1    2    2     98.84514          inf
+
+[ dihedrals ]
+   1    2    3    4    1    -89.74745          inf    1
+   2    3    4    5    1     70.19909          inf    1
+   3    4    5    6    1    -21.18466          inf    1
+   4    5    6    1    1     48.71710          inf    1
+   5    6    1    2    1    -86.18368          inf    1
+   6    1    2    3    1     70.39324          inf    1
+
+[ constraints ]
+   1    2    1      0.22318
+   2    3    1      0.21655
+   3    4    1      0.22446
+   4    5    1      0.23950
+   5    6    1      0.21609
+   6    1    1      0.17990
